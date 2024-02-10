@@ -1,0 +1,74 @@
+@-webkit-keyframes slide-in {
+  0% {
+    opacity: 0.2;
+    pointer-events: none;
+    left: 200px;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: all;
+    left: 363px;
+  }
+}
+@keyframes slide-in {
+  0% {
+    opacity: 0.2;
+    pointer-events: none;
+    left: 200px;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: all;
+    left: 363px;
+  }
+}
+@-webkit-keyframes scale-in {
+  0% {
+    opacity: 0.2;
+    pointer-events: none;
+    scale: 0.8;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: all;
+    scale: 1;
+  }
+}
+@keyframes scale-in {
+  0% {
+    opacity: 0.2;
+    pointer-events: none;
+    scale: 0.8;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: all;
+    scale: 1;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Rubik", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main {
+  height: 800px;
+  width: 1440px;
+  background-color: hsl(0, 0%, 100%);
+  position: relative;
+}

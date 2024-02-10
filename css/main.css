@@ -1,0 +1,382 @@
+@-webkit-keyframes slide-in {
+  0% {
+    opacity: 0.2;
+    pointer-events: none;
+    left: 200px;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: all;
+    left: 363px;
+  }
+}
+@keyframes slide-in {
+  0% {
+    opacity: 0.2;
+    pointer-events: none;
+    left: 200px;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: all;
+    left: 363px;
+  }
+}
+@-webkit-keyframes scale-in {
+  0% {
+    opacity: 0.2;
+    pointer-events: none;
+    scale: 0.8;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: all;
+    scale: 1;
+  }
+}
+@keyframes scale-in {
+  0% {
+    opacity: 0.2;
+    pointer-events: none;
+    scale: 0.8;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: all;
+    scale: 1;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Rubik", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main {
+  height: 800px;
+  width: 1440px;
+  background-color: hsl(0, 0%, 100%);
+  position: relative;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0.2;
+    pointer-events: none;
+    left: 200px;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: all;
+    left: 363px;
+  }
+}
+@keyframes scale-in {
+  0% {
+    opacity: 0.2;
+    pointer-events: none;
+    scale: 0.8;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: all;
+    scale: 1;
+  }
+}
+.phone {
+  width: 247px;
+  height: 505px;
+  border: 10px solid hsl(0, 0%, 100%);
+  border-radius: 30px;
+  position: relative;
+  left: 200px;
+  top: 148px;
+  background-color: hsl(270, 20%, 96%);
+  -webkit-box-shadow: 0 0 20px 0 rgba(128, 128, 128, 0.639);
+          box-shadow: 0 0 20px 0 rgba(128, 128, 128, 0.639);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-animation: slide-in 1s forwards cubic-bezier(0, 0.84, 0.62, 1.12);
+          animation: slide-in 1s forwards cubic-bezier(0, 0.84, 0.62, 1.12);
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+.phone span {
+  display: block;
+  width: 129px;
+  height: 18px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0 0 13.5px 13.5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(49.4px);
+          transform: translateX(49.4px);
+}
+.phone .profile {
+  height: 66px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(hsl(264, 100%, 61%)), to(hsl(293, 100%, 63%)));
+  background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  border-radius: 20px 20px 4px 4px;
+  padding-top: 18px;
+}
+.phone .profile .profile-items {
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.phone .profile .profile-items svg {
+  margin-left: 15px;
+  margin-right: 8px;
+}
+.phone .profile .profile-items img {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+  margin-right: 8px;
+}
+.phone .profile .profile-items .name {
+  margin-right: auto;
+}
+.phone .profile .profile-items .name p {
+  color: hsl(0, 0%, 100%);
+}
+.phone .profile .profile-items .name p:nth-child(1) {
+  font-size: 13px;
+}
+.phone .profile .profile-items .name p:nth-child(2) {
+  font-size: 9px;
+  color: hsl(276, 100%, 81%);
+}
+.phone .profile .profile-items .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2px;
+  margin-right: 6px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.phone .profile .profile-items .menu p {
+  color: hsl(0, 0%, 100%);
+}
+.phone .texts {
+  height: 419px;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+  background-color: transparent;
+  padding: 11px 8px;
+}
+.phone .texts .received-texts {
+  padding: 8px;
+  font-size: 8px;
+  width: 128px;
+  color: hsl(276, 55%, 52%);
+  background-color: hsla(289, 100%, 72%, 0.066);
+  border-radius: 13px 13px 13px 5px;
+  margin-bottom: 8px;
+}
+.phone .texts .received-texts:nth-child(2) {
+  margin-bottom: 8px;
+}
+.phone .texts .pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-bottom: 8px;
+}
+.phone .texts .pics img {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+}
+.phone .texts .pics img:nth-child(1) {
+  margin-right: 8px;
+}
+.phone .texts .pics img:nth-child(2) {
+  margin-right: 8px;
+}
+.phone .texts .sent-texts {
+  padding: 8px;
+  font-size: 9px;
+  width: 128px;
+  color: hsl(271, 15%, 43%);
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 13px 13px 5px 13px;
+  margin-bottom: 8px;
+  margin-left: auto;
+}
+.phone .texts .pricing {
+  height: 32px;
+  width: 160px;
+  border-radius: 13px 13px 13px 5px;
+  background: -webkit-gradient(linear, left top, right top, from(hsl(293, 100%, 63%)), to(hsl(264, 100%, 61%)));
+  background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 8px;
+}
+.phone .texts .pricing:nth-child(7) {
+  margin-bottom: 8px;
+}
+.phone .texts .pricing:nth-child(8) {
+  margin-bottom: 8px;
+}
+.phone .texts .pricing p {
+  font-size: 9px;
+  color: hsl(0, 0%, 100%);
+}
+.phone .texts .pricing p:nth-child(2) {
+  margin-left: 8px;
+  margin-right: 36px;
+}
+.phone .texts .pricing p:nth-child(3) {
+  font-weight: bold;
+  font-size: 11px;
+}
+.phone .texts .input {
+  height: 34px;
+  width: 100%;
+  border-radius: 17px;
+  background-color: hsl(0, 0%, 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: hsl(206, 6%, 79%);
+  font-size: 9px;
+}
+.phone .texts .input p:nth-child(1) {
+  margin-left: 20px;
+  margin-right: auto;
+}
+.phone .texts .input .share-button {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  margin-right: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: hsl(271, 36%, 24%);
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0.2;
+    pointer-events: none;
+    left: 200px;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: all;
+    left: 363px;
+  }
+}
+@keyframes scale-in {
+  0% {
+    opacity: 0.2;
+    pointer-events: none;
+    scale: 0.8;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: all;
+    scale: 1;
+  }
+}
+.bubble-left {
+  height: 700px;
+  width: 512px;
+  border-radius: 0 0 256px 256px;
+  background: linear-gradient(45deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  position: fixed;
+  top: 0;
+  left: -53px;
+}
+.bubble-left .overlay {
+  height: 700px;
+  width: 512px;
+  border-radius: 0 0 256px 256px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(18.12%, white), color-stop(18.12%, transparent));
+  background: linear-gradient(to right, white 18.12%, transparent 18.12%);
+}
+
+.bubble-right {
+  height: 681px;
+  width: 512px;
+  border-radius: 256px 256px 0 0;
+  background-color: hsl(270, 20%, 96%);
+  position: fixed;
+  top: 119px;
+  right: -147px;
+}
+.bubble-right .overlay {
+  height: 681px;
+  width: 512px;
+  border-radius: 256px 256px 0 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(63.58%, transparent), color-stop(63.58%, white));
+  background: linear-gradient(to right, transparent 63.58%, white 63.58%);
+}
+
+.center-text {
+  max-width: 439px;
+  min-width: 439px;
+  height: 166px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 956px;
+  pointer-events: none;
+  scale: 0.8;
+  opacity: 0;
+  -webkit-animation: scale-in 1s forwards cubic-bezier(0, 0.62, 0.79, 1.52);
+          animation: scale-in 1s forwards cubic-bezier(0, 0.62, 0.79, 1.52);
+  -webkit-animation-delay: 750ms;
+          animation-delay: 750ms;
+}
+.center-text h2 {
+  color: hsl(271, 36%, 24%);
+}
+.center-text p {
+  color: hsl(270, 7%, 64%);
+}

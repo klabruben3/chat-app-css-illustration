@@ -1,0 +1,65 @@
+@import "./reset.scss";
+@import "./phone.scss";
+
+@import "./variables/colors.scss";
+@import "./variables/mixins.scss";
+@import "./variables/keyframes.scss";
+
+.bubble-left {
+  height: 700px;
+  width: 512px;
+  border-radius: 0 0 256px 256px;
+  background: linear-gradient(45deg, $lightViolet, $lightMagenta);
+  position: fixed;
+  top: 0;
+  left: -53px;
+
+  .overlay {
+    height: 700px;
+    width: 512px;
+    border-radius: 0 0 256px 256px;
+    background: linear-gradient(to right, white 18.12%, transparent 18.12%);
+  }
+}
+
+.bubble-right {
+  height: 681px;
+  width: 512px;
+  border-radius: 256px 256px 0 0;
+  background-color: $lightGrayishViolet;
+  position: fixed;
+  top: 119px;
+  right: -147px;
+
+  .overlay {
+    height: 681px;
+    width: 512px;
+    border-radius: 256px 256px 0 0;
+    background: linear-gradient(to right, transparent 63.58%, white 63.58%);
+  }
+}
+
+.center-text {
+  max-width: 439px;
+  min-width: 439px;
+  height: 166px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 956px;
+
+  pointer-events: none;
+  scale: 0.8;
+  opacity: 0;
+
+  animation: scale-in 1s forwards cubic-bezier(0, 0.62, 0.79, 1.52);
+  animation-delay: 750ms;
+
+  h2 {
+    color: $veryDarkDesaturatedViolet;
+  }
+
+  p {
+    color: $darkGrayishViolet;
+  }
+}

@@ -1,0 +1,23 @@
+@import "./variables/colors.scss";
+@import "./variables/mixins.scss";
+@import "./variables/keyframes.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Rubik", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+
+body {
+  @include center();
+}
+
+main {
+  height: 800px;
+  width: 1440px;
+  background-color: $white;
+  position: relative;
+}
